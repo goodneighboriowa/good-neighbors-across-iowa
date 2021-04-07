@@ -153,9 +153,9 @@ $(window).on('load', function() {
       if (clusters) {
         // Add multilayer cluster support
         multilayerClusterSupport = L.markerClusterGroup.layerSupport({
-          maxClusterRadius:2000,
-          disableClusteringAtZoom:1,
-          );
+            maxClusterRadius: 10,
+            disableClusteringAtZoom: 10,
+        });
         multilayerClusterSupport.addTo(map);
 
         for (i in layers) {
